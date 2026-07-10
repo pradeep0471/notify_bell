@@ -1,0 +1,25 @@
+{
+  "name": "notification-backend",
+  "version": "1.0.0",
+  "description": "Tenant-aware notification API + trigger demo for the full-stack challenge",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest --runInBand",
+    "trigger:demo": "node src/triggers/cli.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nanoid": "^3.3.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
